@@ -36,5 +36,7 @@ public class Ej01_IMC {
 			resultado = "'obesidad mórbida'.";
 		}
 		System.out.printf("El paciente de %.2f kg y %.2fm de altura tiene un IMC de %.2f, con un diagnóstico de %s", peso, altura, imc, resultado);
+		
+		teclado.close();
 	}
 }
