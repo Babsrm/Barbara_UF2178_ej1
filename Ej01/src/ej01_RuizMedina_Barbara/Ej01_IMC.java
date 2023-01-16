@@ -23,6 +23,11 @@ public class Ej01_IMC {
 		imc = peso / (Math.pow(altura, 2));
 		String resultado = "";
 		
+		if (imc <= 0) { 
+			System.err.println("Error. El IMC calculado no puede ser negativo. Revise los datos e inicie de nuevo el procedimiento."); 
+			System.exit(-1); //control de error, sale del programa
+			}
+		
 		//considero que, en los intervalos, el valor mínimo es menor o igual y el máximo es menor.
 		if (imc <= 18.5) {
 			resultado = "'bajo peso'.";
